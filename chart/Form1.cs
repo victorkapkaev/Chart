@@ -19,11 +19,11 @@ namespace chart
 
         private void Button1_Click(object sender, EventArgs e)
         {
-            this.chart1.Series["Groth"].Points.AddXY("от 175",int.Parse(textBox1.Text));
-            this.chart1.Series["Groth"].Points.AddXY("от 170 до 175", int.Parse(textBox2.Text));
-            this.chart1.Series["Groth"].Points.AddXY("от 165 до 170", int.Parse(textBox3.Text));
-            this.chart1.Series["Groth"].Points.AddXY("от 160 до 165", int.Parse(textBox4.Text));
-            this.chart1.Series["Groth"].Points.AddXY("до 160", int.Parse(textBox5.Text));
+            this.chart1.Series["Growth"].Points.AddXY("high than 185",int.Parse(textBox1.Text));
+            this.chart1.Series["Growth"].Points.AddXY("175 - 185", int.Parse(textBox2.Text));
+            this.chart1.Series["Growth"].Points.AddXY("165 - 175", int.Parse(textBox3.Text));
+            this.chart1.Series["Growth"].Points.AddXY("155 - 165", int.Parse(textBox4.Text));
+            this.chart1.Series["Growth"].Points.AddXY("less than 160", int.Parse(textBox5.Text));
         }
 
         private void Button2_Click(object sender, EventArgs e)
@@ -33,7 +33,7 @@ namespace chart
             textBox3.Clear();
             textBox4.Clear();
             textBox5.Clear();
-            this.chart1.Series["Groth"].Points.Clear();
+            this.chart1.Series["Growth"].Points.Clear();
 
 
         }
